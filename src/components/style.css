@@ -1,0 +1,54 @@
+body {
+    background: #2F7336;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #AA3A38, #2F7336);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #AA3A38, #2F7336); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    font-size: 15px;
+}
+
+#name {
+    text-align: left;
+
+}
+
+#other {
+    text-align: right;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.list-group-item {
+    background: #ADA996; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 8px;
+    border-radius: 10px;
+    margin-left: 400px;
+    margin-right: 400px;
+    color: black;
+    border-bottom: 8px;
+}
+
+form {
+    text-align: center;
+}
+
+button {
+    width: fit-content;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* .abc{
+    width: fit-content;
+    text-align: center;
+} */
