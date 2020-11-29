@@ -1,11 +1,9 @@
 # User-Dictionary-React
     
-For this assignment I create a employee directory with React. With the requirements to break the application's UI into components, manage component state, and respond to user events.
+For this assignment I created a employee directory with React with the requirements to break the application's UI into components, manage component state, and respond to user events.
 
 * [Installation](#Installation)
 Clone repository and 'npm start' to install
-#Contributors)
-
 
     # Technology
     javascript, react, node.js
