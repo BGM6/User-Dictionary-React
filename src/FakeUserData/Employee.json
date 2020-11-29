@@ -114,5 +114,20 @@
     "lastName": "lafrades",
     "email": "emerson@gmail.com",
     "genre": "N/A"
+  },
+  {
+  "id": 17,
+  "firstName": "emerson",
+  "lastName": "guilas",
+  "email": "eGuilas@gmail.com",
+  "genre": "Alternative Rock"
+  },
+
+  {
+  "id": 18,
+  "firstName": "bob",
+  "lastName": "dylan",
+  "email": "bobbyDill@gmail.com",
+  "genre": "Folk"
   }
 ]
