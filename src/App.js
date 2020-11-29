@@ -2,8 +2,11 @@ import React, {Component} from "react";
 import Employee from "./components/Employee";
 import employeeList from "./FakeUserData/Employee.json";
 import Form from "./components/Form";
+import {makeStyles} from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
 
 class App extends Component {
+
   state = {
     sorted: employeeList,
     firstName: "",
@@ -75,9 +78,15 @@ class App extends Component {
               handleFormSubmit={this.handleFormSubmit}
           />
 
-          <button onClick={
-            this.sortName
-          }>Sort By First Name</button>
+
+
+          <Button
+              style={{marginLeft: '10px'}}
+              onClick={this.sortName}
+              variant="contained"
+              color="Secondary">
+            Sort by First Name
+          </Button>
 
           <Employee employeeList={this.state.sorted}/>
 
