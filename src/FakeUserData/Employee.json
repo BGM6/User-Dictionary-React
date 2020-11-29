@@ -90,5 +90,29 @@
     "lastName": "adkins",
     "email": "AdeleAdkins@OneandOnly.com",
     "genre": "Pop"
+  },
+
+  {
+    "id": 14,
+    "firstName": "bryan",
+    "lastName": "guilas",
+    "email": "BryanG@yahoo.com",
+    "genre": "N/A"
+  },
+
+  {
+    "id": 15,
+    "firstName": "hayden",
+    "lastName": "lafrades",
+    "email": "AreYouHappy@gmail.com",
+    "genre": "N/A"
+  },
+
+  {
+    "id": 16,
+    "firstName": "emerson",
+    "lastName": "lafrades",
+    "email": "emerson@gmail.com",
+    "genre": "N/A"
   }
 ]
