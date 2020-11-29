@@ -6,7 +6,8 @@ For this assignment I created a employee directory with React with the requireme
 Clone repository and 'npm start' to install
 
     # Technology
-    javascript, react, node.js, material UI, bootstrap
+    Javascript, React, Node.js, Material UI, Bootstrap
+    
     # Author 
     Bryan Guilas
     
