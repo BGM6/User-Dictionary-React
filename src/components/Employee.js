@@ -33,8 +33,8 @@ export default function Employee(props) {
                             <TableCell align="right" style={{fontSize: '18px', fontWeight: 'bold'}}>Email</TableCell>
                         </TableRow>
                     </TableHead>
+                    {props.employeeList.length ? (
                     <TableBody>
-
                             {props.employeeList.map((result) => (
                                     <TableRow key={result.id}>
                                         <TableCell component="th" scope="row">{result.id}</TableCell>
@@ -46,6 +46,8 @@ export default function Employee(props) {
                                 ))
                             }
                     </TableBody>
+                    ) : (<h2 style={{color: 'red'}}>No employee found</h2>)
+                    }
                 </Table>
             </TableContainer>
         </div>

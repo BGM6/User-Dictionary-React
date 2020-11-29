@@ -10,13 +10,11 @@ class App extends Component {
     state = {
         sorted: employeeList,
         firstName: "",
-        lastName: ""
+        lastName: "",
     }
     handleInputChange = event => {
-
         const value = event.target.value;
         const name = event.target.name;
-
 
         this.setState({
             [name]: value.toLowerCase(),
@@ -30,16 +28,16 @@ class App extends Component {
 
         // eslint-disable-next-line array-callback-return
         const newArray = findEmployee.filter(employee => {
-            if (employee.lastName === this.state.firstName || employee.firstName === this.state.firstName)  {
+            if (employee.lastName === this.state.firstName || employee.firstName === this.state.firstName) {
                 return employee
-            }
+            } else return this.state.empty;
         })
         //setState
         this.setState({sorted: newArray})
 
         this.setState({
             firstName: "",
-            lastName: ""
+            lastName: "",
         });
     };
     sortByFirstName = () => {
@@ -53,7 +51,7 @@ class App extends Component {
     sortByLastName = () => {
         let unsorted = new Array(...employeeList)
         let sorted = unsorted.sort((a, b) => {
-            return (a.lastName > b.lastName ) ? 1 : ((b.lastName > a.lastName) ? -1 : 0)
+            return (a.lastName > b.lastName) ? 1 : ((b.lastName > a.lastName) ? -1 : 0)
         })
         this.setState({sorted: sorted})
     }

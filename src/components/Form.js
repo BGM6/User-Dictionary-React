@@ -18,7 +18,7 @@ function Form(props) {
             <h1>Employee Directory</h1>
             <h3>Search Employee's by last name or first name</h3>
 
-            <div className="entertext">
+            <div className="enter-text">
                 <form className="form">
 
                     <TextField id="filled-basic" label="Name" variant="filled"
