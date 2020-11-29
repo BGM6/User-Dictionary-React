@@ -20,4 +20,4 @@ GitHub: https://github.com/BGM6
     
 RepoUrl: https://api.github.com/users/BGM6/repos
 
-![alt text](src/assets/screenshot.png "Terminal Screenshot")
+![alt text](/assets/screenshot.png "Terminal Screenshot")
