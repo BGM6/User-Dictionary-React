@@ -129,5 +129,21 @@
   "lastName": "dylan",
   "email": "bobbyDill@gmail.com",
   "genre": "Folk"
+  },
+
+  {
+    "id": 19,
+    "firstName": "bobby",
+    "lastName": "digital",
+    "email": "theRza@enterthewu.com",
+    "genre": "Hip-hop"
+  },
+
+  {
+    "id": 20,
+    "firstName": "kendrick",
+    "lastName": "lamar",
+    "email": "KLstraightOutofCompton@gmail.com",
+    "genre": "Hip-hop"
   }
 ]
