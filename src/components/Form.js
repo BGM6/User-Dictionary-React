@@ -16,7 +16,7 @@ function Form(props) {
     return (
         <div className={classes.root}>
             <h1>Employee Directory</h1>
-            <h3>Search Employee's by last name</h3>
+            <h3>Search Employee's by last name or first name</h3>
 
             <div className="entertext">
                 <form className="form">

@@ -24,23 +24,27 @@ export default function Employee(props) {
                 <Table className={classes.table} aria-label="simple table">
                     <TableHead>
                         <TableRow>
-                            <TableCell style={{fontSize:'18px', fontWeight:'bold'}}>ID</TableCell>
-                            <TableCell align="right"  style={{fontSize:'18px', fontWeight:'bold'}}>Last Name</TableCell>
-                            <TableCell align="right" style={{fontSize:'18px', fontWeight:'bold'}}>First Name</TableCell>
-                            <TableCell align="right" style={{fontSize:'18px', fontWeight:'bold'}}>Genre</TableCell>
-                            <TableCell align="right" style={{fontSize:'18px', fontWeight:'bold'}}>Email</TableCell>
+                            <TableCell style={{fontSize: '18px', fontWeight: 'bold'}}>ID</TableCell>
+                            <TableCell align="right" style={{fontSize: '18px', fontWeight: 'bold'}}>Last
+                                Name</TableCell>
+                            <TableCell align="right" style={{fontSize: '18px', fontWeight: 'bold'}}>First
+                                Name</TableCell>
+                            <TableCell align="right" style={{fontSize: '18px', fontWeight: 'bold'}}>Genre</TableCell>
+                            <TableCell align="right" style={{fontSize: '18px', fontWeight: 'bold'}}>Email</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
-                        {props.employeeList.map((result) => (
-                            <TableRow key={result.id}>
-                                <TableCell component="th" scope="row">{result.id}</TableCell>
-                                <TableCell align="right" >{result.lastName}</TableCell>
-                                <TableCell align="right">{result.firstName}</TableCell>
-                                <TableCell align="right">{result.genre}</TableCell>
-                                <TableCell align="right">{result.email}</TableCell>
-                            </TableRow>
-                        ))}
+
+                            {props.employeeList.map((result) => (
+                                    <TableRow key={result.id}>
+                                        <TableCell component="th" scope="row">{result.id}</TableCell>
+                                        <TableCell align="right">{result.lastName}</TableCell>
+                                        <TableCell align="right">{result.firstName}</TableCell>
+                                        <TableCell align="right">{result.genre}</TableCell>
+                                        <TableCell align="right">{result.email}</TableCell>
+                                    </TableRow>
+                                ))
+                            }
                     </TableBody>
                 </Table>
             </TableContainer>

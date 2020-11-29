@@ -30,7 +30,7 @@ class App extends Component {
 
         // eslint-disable-next-line array-callback-return
         const newArray = findEmployee.filter(employee => {
-            if (employee.lastName === this.state.firstName) {
+            if (employee.lastName === this.state.firstName || employee.firstName === this.state.firstName)  {
                 return employee
             }
         })
