@@ -11,13 +11,12 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-
 function Form(props) {
     const classes = useStyles();
     return (
         <div className={classes.root}>
             <h1>Employee Directory</h1>
-            <h3>Enter the Employee's name you would like to search</h3>
+            <h3>Search Employee's by last name</h3>
 
             <div className="entertext">
                 <form className="form">
@@ -28,7 +27,6 @@ function Form(props) {
                                onChange={props.handleInputChange}
                                type="text"
                                placeholder="Employee's Name"
-
                     />
 
                     <Button

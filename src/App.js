@@ -14,44 +14,46 @@ class App extends Component {
     }
     handleInputChange = event => {
 
-        let value = event.target.value;
+        const value = event.target.value;
         const name = event.target.name;
 
 
         this.setState({
-            [name]: value
+            [name]: value.toLowerCase(),
         });
     };
 
     handleFormSubmit = event => {
         event.preventDefault();
 
-        let findFirstName = new Array(...employeeList)
-        console.log(findFirstName)
-        let filtersReturnNewArrays = findFirstName.filter(employee => {
-            console.log(employee.firstName)
-            console.log(this.state.firstName)
+        const findEmployee = new Array(...employeeList)
 
-            console.log(employee.firstName.includes(this.state.firstName))
-            return employee.firstName.includes(this.state.firstName.toLowerCase())
-                || employee.lastName.includes(this.state.firstName.toLowerCase())
+        // eslint-disable-next-line array-callback-return
+        const newArray = findEmployee.filter(employee => {
+            if (employee.lastName === this.state.firstName) {
+                return employee
+            }
         })
-        console.log(filtersReturnNewArrays)
         //setState
-        this.setState({sorted: filtersReturnNewArrays})
+        this.setState({sorted: newArray})
 
         this.setState({
             firstName: "",
             lastName: ""
         });
     };
-    sortName = () => {
+    sortByFirstName = () => {
         let unsorted = new Array(...employeeList)
-        console.log(unsorted)
         let sorted = unsorted.sort((a, b) => {
-            console.log(a.firstName, b.firstName)
-            console.log(b.firstName - a.firstName)
             return (a.firstName > b.firstName) ? 1 : ((b.firstName > a.firstName) ? -1 : 0)
+        })
+        this.setState({sorted: sorted})
+    }
+
+    sortByLastName = () => {
+        let unsorted = new Array(...employeeList)
+        let sorted = unsorted.sort((a, b) => {
+            return (a.lastName > b.lastName ) ? 1 : ((b.lastName > a.lastName) ? -1 : 0)
         })
         this.setState({sorted: sorted})
     }
@@ -60,7 +62,6 @@ class App extends Component {
         return (
 
             <div style={{textAlign: "center"}}>
-
                 <Form
                     firstName={this.state.firstName}
                     lastName={this.state.lastName}
@@ -68,17 +69,21 @@ class App extends Component {
                     handleFormSubmit={this.handleFormSubmit}
                 />
 
-
                 <Button
                     style={{marginLeft: '10px'}}
-                    onClick={this.sortName}
+                    onClick={this.sortByFirstName}
                     variant="contained"
                     color="Secondary">
                     Sort by First Name
                 </Button>
-
+                <Button
+                    style={{marginLeft: '10px'}}
+                    onClick={this.sortByLastName}
+                    variant="contained"
+                    color="Secondary">
+                    Sort by Last Name
+                </Button>
                 <Employee employeeList={this.state.sorted}/>
-
             </div>
         )
     }
