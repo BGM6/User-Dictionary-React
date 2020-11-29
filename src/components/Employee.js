@@ -3,8 +3,6 @@ import "./style.css";
 
 
 function employee (props) {
-    //Condition if statement and Map function to loop through array
-
     return (
         <div>
             {props.employeeList.length ? (

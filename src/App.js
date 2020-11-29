@@ -2,8 +2,8 @@ import React, {Component} from "react";
 import Employee from "./components/Employee";
 import employeeList from "./FakeUserData/Employee.json";
 import Form from "./components/Form";
-import {makeStyles} from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
+
 
 class App extends Component {
 
@@ -13,27 +13,19 @@ class App extends Component {
     lastName: ""
   }
   handleInputChange = event => {
-    // Getting the value and name of the input which triggered the change
+
     let value = event.target.value;
     const name = event.target.name;
 
-    // Updating the input's state
+
     this.setState({
       [name]: value
     });
   };
 
   handleFormSubmit = event => {
-    // Preventing the default behavior of the form submit (which is to refresh the page)
     event.preventDefault();
 
-    // Using this.state; Make a if/else statement to do the following
-    // If first or last name is empty alert the user that they are empty
-    // Else if both have values alert the user to say "Hi firstName and lastName"
-
-    //sort a deep copy of the list
-    //WRONG: this.state.property=value
-    //RIGHT: this.setState({propert:value})
     let findFirstName = new Array(...employeeList)
     console.log(findFirstName)
     let filtersReturnNewArrays = findFirstName.filter(employee=>{
