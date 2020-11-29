@@ -1,87 +1,94 @@
 [
   {
     "id": 1,
-    "img": "../public/img/sponge.png",
-    "firstName": "spongebob",
-    "lastName": "squarepants",
-    "email": "spongebob@cartoon.com",
-    "type": "Sponge"
+    "firstName": "bob",
+    "lastName": "marley",
+    "email": "Marley@gmail420.com",
+    "genre": "Reggae"
   },
   {
     "id": 2,
-    "firstName": "krabs",
-    "lastName": "krabs",
-    "email": "krabs@cartoon.com",
-    "type": "Crab"
+    "firstName": "tupac",
+    "lastName": "shakur",
+    "email": "2pac@thuglife.com",
+    "genre": "Gangsta Rap"
   },
   {
     "id": 3,
-    "firstName": "squidward",
-    "lastName": "squiddy",
-    "email": "squiward@cartoon.com",
-    "type": "Squid"
+    "firstName": "lauryn",
+    "lastName": "hill",
+    "email": "Lauryn@miseducation.com",
+    "genre": "Soul"
   },
   {
     "id": 4,
-    "firstName": "dexter",
-    "lastName": "genius",
-    "email": "dexter@cartoon.com",
-    "type": "Human"
+    "firstName": "wolfgang",
+    "lastName": "amadeus mozart",
+    "email": "Mozart@classyAF.com",
+    "genre": "Classical"
   },
   {
     "id": 5,
-    "firstName": "courage",
-    "lastName": "dog",
-    "email": "courage@cartoon.com",
-    "type": "Dog"
+    "firstName": "elliott",
+    "lastName": "smith",
+    "email": "SayYes@Esmith.com",
+    "genre": "Indie/Acoustic"
   },
   {
     "id": 6,
-    "firstName": "doug",
-    "lastName": "funnie",
-    "email": "doug@cartoon.com",
-    "type": "Human"
+    "firstName": "billy",
+    "lastName": "joel",
+    "email": "BillyJ@gmail.com",
+    "genre": "Rock"
   },
   {
     "id": 7,
-    "firstName": "bugs",
-    "lastName": "bunny",
-    "email": "bugs@cartoon.com",
-    "type": "Bunny"
+    "firstName": "steve",
+    "lastName": "perry",
+    "email": "Stevie@foolishHeart.com",
+    "genre": "Rock"
   },
   {
     "id": 8,
     "firstName": "johnny",
-    "lastName": "bravo",
-    "email": "johnny@cartoon.com",
-    "type": "Human"
+    "lastName": "cash",
+    "email": "johnny@cashMoney.com",
+    "genre": "Country"
   },
   {
     "id": 9,
-    "firstName": "tommy",
-    "lastName": "pickles",
-    "email": "tommy@cartoon.com",
-    "type": "Human"
+    "firstName": "frank",
+    "lastName": "sinatra",
+    "email": "iDidItMyWay@frankSin.com",
+    "genre": "Vocal Pop"
   },
   {
     "id": 10,
-    "firstName": "rocko",
-    "lastName": "man",
-    "email": "rocko@cartoon.com",
-    "type": "Human"
+    "firstName": "prince",
+    "lastName": "nelson",
+    "email": "PartyLikeIts1999@legend.com",
+    "genre": "R&B/Soul"
   },
   {
     "id": 11,
-    "firstName": "captain",
-    "lastName": "planet",
-    "email": "captain@cartoon.com",
-    "type": "Human"
+    "firstName": "paul",
+    "lastName": "simon",
+    "email": "kodachrome@gmail.com",
+    "genre": "Pop"
   },
   {
     "id": 12,
-    "firstName": "ickis",
-    "lastName": "monster",
-    "email": "ickis@cartoon.com",
-    "type": "Monster"
+    "firstName": "christoper",
+    "lastName": "wallace",
+    "email": "BigPoppa@NotoriousBIG.com",
+    "genre": "Hip-Hop"
+  },
+
+  {
+    "id": 13,
+    "firstName": "adele",
+    "lastName": "adkins",
+    "email": "AdeleAdkins@OneandOnly.com",
+    "genre": "Pop"
   }
 ]
