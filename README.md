@@ -5,7 +5,7 @@ For this assignment I created a employee directory with React with the requireme
 URL: https://userdictionaryreact.herokuapp.com/
 
 * [Installation](#Installation)
-Clone repository and 'npm start' to install
+Clone repository and 'npm install' to install then 'npm start'
 
     # Technology
     Javascript, React, Node.js, Material UI, Bootstrap
