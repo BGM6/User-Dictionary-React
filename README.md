@@ -13,7 +13,6 @@ Clone repository and 'npm install' to install then 'npm start'
     # Author 
     Bryan Guilas
     
-**bgm6**
     
 Email: bguilas21@yahoo.com
     
