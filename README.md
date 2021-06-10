@@ -14,7 +14,7 @@ Clone repository and 'npm install' to install then 'npm start'
     Bryan Guilas
     
     
-Email: bguilas21@yahoo.com
+Email: bryanjguilas@gmail.com
     
 GitHub: https://github.com/BGM6
     
